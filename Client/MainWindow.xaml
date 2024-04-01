@@ -1,0 +1,65 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Menu" Height="600" Width="900">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\Background1.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Button Name="SignUpbt" HorizontalAlignment="Left" Background="{x:Null}" Margin="450,300,0,0" VerticalAlignment="Top" Width="168" Height="52" Click="ButtonSignUp" BorderThickness="0">
+            <StackPanel>
+                <Image Source="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\Sign Up.png" Height="52" Width="168"/>
+            </StackPanel>
+        </Button>
+        <Button Name="CreateRoombt" HorizontalAlignment="Left" Background="{x:Null}" Margin="250,300,0,0" VerticalAlignment="Top" Width="168" Height="52" Click="ButtonCreateRoom" BorderThickness="0">
+            <StackPanel>
+                <Image Source="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\Create Room.png" Height="52" Width="168"/>
+            </StackPanel>
+        </Button>
+        <Button Name="JoinRoombt" HorizontalAlignment="Left" Background="{x:Null}" Margin="450,370,0,0" VerticalAlignment="Top" Width="168" Height="52" Click="ButtonJoinRoom" BorderThickness="0">
+            <StackPanel>
+                <Image Source="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\Join Room.png" Height="52" Width="168"/>
+            </StackPanel>
+        </Button>
+        <Button Name="Statisticsbt" HorizontalAlignment="Left" Background="{x:Null}" Margin="250,370,0,0" VerticalAlignment="Top" Width="168" Height="52" Click="ButtonStatus" BorderThickness="0">
+            <StackPanel>
+                <Image Source="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\Statistics.png" Height="52" Width="168"/>
+            </StackPanel>
+        </Button>
+        <Button Name="BestScoresbt" HorizontalAlignment="Left" Background="{x:Null}" Margin="450,430,0,0" VerticalAlignment="Top" Width="168" Height="52" Click="ButtonBestScores" BorderThickness="0">
+            <StackPanel>
+                <Image Source="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\Best Scores.png" Height="52" Width="168"/>
+            </StackPanel>
+        </Button>
+        <Button Name="AddQuestionsbt" HorizontalAlignment="Left" Background="{x:Null}" Margin="250,430,0,0" VerticalAlignment="Top" Width="168" Height="52" Click="ButtonAddQuestion" BorderThickness="0">
+            <StackPanel>
+                <Image Source="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\addQuestion.png" Height="52" Width="168"/>
+            </StackPanel>
+        </Button>
+        <Button Name="Quit" HorizontalAlignment="Left" Background="{x:Null}" Margin="0,484,0,0" VerticalAlignment="Top" Width="168" Height="52" Click="ButtonQuit" BorderThickness="0">
+            <StackPanel>
+                <Image Source="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\Quit.png" Height="52" Width="168"/>
+            </StackPanel>
+        </Button>
+        <Button Name="Loginbt" HorizontalAlignment="Left" Background="{x:Null}" Margin="500,210,0,0" VerticalAlignment="Top" Width="168" Height="52" Click="ButtonLogin" BorderThickness="0">
+            <StackPanel>
+                <Image Source="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\login.png" Height="52" Width="168"/>
+            </StackPanel>
+        </Button>
+        <TextBlock x:Name="username" Foreground="PaleVioletRed" TextAlignment="Center" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" FontStyle="Italic" Canvas.Top="2" Canvas.Left="1" Visibility="Visible" IsEnabled="True" Margin="207,210,581,322">User Name</TextBlock>
+        <TextBlock x:Name="password" Foreground="PaleVioletRed" TextAlignment="Center" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" FontStyle="Italic" Canvas.Top="2" Canvas.Left="1" Visibility="Visible" IsEnabled="True" Margin="207,236,596,307">Password</TextBlock>
+        <TextBox Name="usernameBox" Background="Transparent" TextWrapping="Wrap" Text="" Margin="311,210,426,333" TextChanged="usernameBox_TextChanged" GotFocus="txtInput_GotFocusUserName" LostFocus="txtInput_LostFocusUserName"/>
+        <TextBox Name="passwordBox" Background="Transparent" TextWrapping="Wrap" Text="" Margin="311,236,426,307" TextChanged="passwordBox_TextChanged" GotFocus="txtInput_GotFocusPass" LostFocus="txtInput_LostFocusPass"/>
+        <TextBlock x:Name="issueWithLogin" Foreground="Red" TextAlignment="Center" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" FontStyle="Italic" Canvas.Top="2" Canvas.Left="1" Visibility="Hidden"  IsEnabled="True" Margin="338,274,338,258">User do not exist</TextBlock>
+        <TextBlock x:Name="newClient" Foreground="PaleVioletRed" TextAlignment="Center" FontFamily="Times New Roman" FontSize="30" FontWeight="Bold" FontStyle="Italic" Canvas.Top="2" Canvas.Left="1" Visibility="Hidden"  IsEnabled="True" Margin="338,204,338,327"></TextBlock>
+        <Button Name="Logoutbt" HorizontalAlignment="Left" Background="{x:Null}" VerticalAlignment="Top" Width="168" Height="52" Click="ButtonLogout" BorderThickness="0" Margin="450,300,0,0" Visibility="Hidden">
+            <StackPanel>
+                <Image Source="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\Logout.png" Height="52" Width="168"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

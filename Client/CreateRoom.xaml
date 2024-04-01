@@ -1,0 +1,35 @@
+﻿<Window x:Class="Client.CreateRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="CreateRoom" Height="600" Width="900">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\Background2.jpg" Stretch="Fill"/>
+        </Grid.Background>
+        <Button Name="Back" HorizontalAlignment="Left" Background="{x:Null}" Margin="69,450,0,0" VerticalAlignment="Top" Width="168" Height="52" Click="ButtonQuit" BorderThickness="0">
+            <StackPanel>
+                <Image Source="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\Back.png" Height="52" Width="168"></Image>
+            </StackPanel>
+        </Button>
+        <TextBlock x:Name="createRoomBlock" Foreground="RosyBrown" TextAlignment="Center" FontFamily="Times New Roman" FontSize="50" FontWeight="Bold" FontStyle="Italic" Canvas.Top="2" Canvas.Left="1" Visibility="Visible" IsEnabled="True" Margin="306,82,306,423">Create Room</TextBlock>
+        <TextBlock x:Name="roomName" Foreground="PaleVioletRed" TextAlignment="Center" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" FontStyle="Italic" Canvas.Top="2" Canvas.Left="1" Visibility="Visible" IsEnabled="True" Margin="164,210,612,316">Room Name</TextBlock>
+        <TextBlock x:Name="NumOfPlayers" Foreground="PaleVioletRed" TextAlignment="Center" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" FontStyle="Italic" Canvas.Top="2" Canvas.Left="1" Visibility="Visible" IsEnabled="True" Margin="161,236,556,301">Number Of Players</TextBlock>
+        <TextBlock x:Name="NumOfQuestions" Foreground="PaleVioletRed" TextAlignment="Center" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" FontStyle="Italic" Canvas.Top="2" Canvas.Left="1" Visibility="Visible" IsEnabled="True" Margin="163,262,542,275">Number Of Questions</TextBlock>
+        <TextBlock x:Name="TimeForQuestion" Foreground="PaleVioletRed" TextAlignment="Center" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" FontStyle="Italic" Canvas.Top="2" Canvas.Left="1" Visibility="Visible" IsEnabled="True" Margin="158,288,569,250">Time Of Questions</TextBlock>
+        <TextBox Name="roomNameBox" Background="Transparent" TextWrapping="Wrap" Text="" Margin="355,210,382,333"/>
+        <TextBox Name="NumOfPlayersBox" Background="Transparent" TextWrapping="Wrap" Text="" Margin="355,236,382,307"/>
+        <TextBox Name="NumOfQuestionsBox" Background="Transparent" TextWrapping="Wrap" Text="" Margin="355,262,382,281"/>
+        <TextBox Name="TimeForQuestionBox" Background="Transparent" TextWrapping="Wrap" Text="" Margin="355,288,382,255"/>
+        <Button Name="createRoom" HorizontalAlignment="Left" Background="{x:Null}" Margin="530,230,0,0" VerticalAlignment="Top" Width="168" Height="52" Click="ButtonCreateRoom" BorderThickness="0">
+            <StackPanel>
+                <Image Source="C:\Users\test0\trivia_adaya_and_shai_2023\Trivia\Client\Create Room.png" Height="52" Width="168"/>
+            </StackPanel>
+        </Button>
+        <TextBlock x:Name="issueWithCreateRoom" Foreground="Red" TextAlignment="Center" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" FontStyle="Italic" Canvas.Top="2" Canvas.Left="1" Visibility="Visible" IsEnabled="True" Margin="100,349,128,118"></TextBlock>
+
+    </Grid>
+</Window>
